@@ -113,7 +113,7 @@ public class ReverseWord {
 
         //largest word unit tests
         Assert.assertEquals(largestWord, "abcde", "Expected largest word doesn't match");
-        Assert.assertNotEquals(largestWord, "ab", "Expected largest word doesn't match");
+        Assert.assertNotEquals(largestWord, "ab", "Expected largest word is not correct");
     }
 
     /**
