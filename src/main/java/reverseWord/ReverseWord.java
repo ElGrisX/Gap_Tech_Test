@@ -26,7 +26,7 @@ public class ReverseWord {
     }
 
     /**
-     * Method for delete a text file if exist
+     * Method to delete a text file if exist
      */
     public void deleteFile(){
 
@@ -42,7 +42,7 @@ public class ReverseWord {
         }
     }
     /**
-     * Method for create a text file and add words to the text file
+     * Method to create a text file and add words to the text file
      */
     public void writeWordsIntoFile(){
         deleteFile();
@@ -62,7 +62,7 @@ public class ReverseWord {
     }
 
     /**
-     * Method for get the largest word from the text file
+     * Method to get the largest word from the text file
      * @return Return the largest word from the text file
      */
     public String getLargestWord() {
@@ -89,7 +89,7 @@ public class ReverseWord {
     }
 
     /**
-     * Method for reverse the largest word from the file text
+     * Method to reverse the largest word from the file text
      * @param word Largest word from text file
      * @return Return a reversed word
      */
@@ -105,7 +105,7 @@ public class ReverseWord {
     }
 
     /**
-     * Test method for test the get functionality largest word from a text file
+     * Test method to test the get functionality largest word from a text file
      */
     @Test
     public  void testGetLargestWord(){
@@ -117,7 +117,7 @@ public class ReverseWord {
     }
 
     /**
-     * Test method for test the reverse largest word functionality
+     * Test method to test the reverse largest word functionality
      */
     @Test
     public  void testReverseLargestWord(){

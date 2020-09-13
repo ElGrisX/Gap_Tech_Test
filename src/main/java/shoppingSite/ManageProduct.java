@@ -7,9 +7,18 @@ import io.restassured.specification.RequestSpecification;
 import setup.BaseClass;
 import static io.restassured.RestAssured.given;
 
+/**
+ * This class contains attributes and methods in order manage all the action related to product like create and delete the product using API
+ * @author Miguel A.
+ * @version 1.0
+ */
 public class ManageProduct extends BaseClass {
 
 
+    /**
+     * A method  to create the product via API
+     * @param specs1 contains request specification info to make the request
+     */
     public String createProduct(RequestSpecification specs1){
         Response response =given(specs1)
                 .auth()
@@ -29,6 +38,11 @@ public class ManageProduct extends BaseClass {
         return productId;
     }
 
+    /**
+     * A method  to create the product via API
+     * @param specs1 contains request specification info to make the request
+     * @param productId related to the productId to be deleted via API
+     */
     public void deleteProduct(String productId,RequestSpecification specs1){
         Response response =given(specs1)
                 .auth()

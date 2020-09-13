@@ -2,8 +2,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import setup.BaseClass;
 import shoppingSite.ShoppingSitePage;
-import utilities.TestAnnotationUtils;
 
+/**
+ * This class contains annotations to control the test execution workflow and test methods in order to run the test
+ * @author Miguel A.
+ * @version 1.0
+ */
 public class ShoppingSite_Tests extends BaseClass {
 
     WebDriver driver;
@@ -22,7 +26,6 @@ public class ShoppingSite_Tests extends BaseClass {
     /**
      * Test method in order to verify if the product page is loading as expected
      */
-    @TestAnnotationUtils.TestAnnotation(value = "Verify if the product page is loading as expected")
     @Test(priority=1)
     public void verifyProductPageLoadAsExpected(){
         shoppingSitePage = new ShoppingSitePage(driver);
@@ -32,7 +35,6 @@ public class ShoppingSite_Tests extends BaseClass {
     /**
      * Test method in order to verify if the product quantity
      */
-    @TestAnnotationUtils.TestAnnotation(value = "Verify if the product quantity is working as expected")
     @Test(priority=2)
     public void verifyProductQuantityIsCorrect(){
         shoppingSitePage = new ShoppingSitePage(driver);
@@ -41,7 +43,6 @@ public class ShoppingSite_Tests extends BaseClass {
     /**
      * Test method in order to verify if the product quantity
      */
-    @TestAnnotationUtils.TestAnnotation(value = "Verify if Add to Card functionality is working as expected")
     @Test(priority=3)
     public void verifyAddToCartButton(){
         shoppingSitePage = new ShoppingSitePage(driver);
@@ -50,7 +51,6 @@ public class ShoppingSite_Tests extends BaseClass {
     /**
      * Test method in order to verify if the product quantity
      */
-    @TestAnnotationUtils.TestAnnotation(value = "Verify if Product list is displaying the correct info")
     @Test(priority=4)
     public void verifyProductListInfo(){
         shoppingSitePage = new ShoppingSitePage(driver);
