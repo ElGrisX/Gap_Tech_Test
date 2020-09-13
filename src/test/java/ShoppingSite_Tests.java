@@ -13,11 +13,17 @@ public class ShoppingSite_Tests extends BaseClass {
     WebDriver driver;
     ShoppingSitePage shoppingSitePage;
 
+    /**
+     * Before method to initialize the webdriver and open the shopping site before every test method
+     */
     @BeforeMethod
     public void setupMethod() {
         this.driver = setWebDriver();
         openShoppingSite();
     }
+    /**
+     * After method to quit the webdriver and close the browser after every test method
+     */
     @AfterMethod
     public void tearDownDriver(){
         driver.quit();
