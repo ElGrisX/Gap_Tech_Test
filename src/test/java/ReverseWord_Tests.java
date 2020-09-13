@@ -21,7 +21,7 @@ public class ReverseWord_Tests{
     }
 
     /**
-     * Test method for test the reverse largest word functionality
+     * Test method to test the reverse largest word functionality
      */
     @Test(priority=2)
     public  void verifyReverseLargestWord(){

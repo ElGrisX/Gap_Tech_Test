@@ -1,14 +1,14 @@
 package shoppingSite;
 
 /**
- * This class contains the product payload for create a new product via API
+ * This class contains the product payload to create a new product via API
  * @author Miguel A.
  * @version 1.0
  */
 public class Payload {
 
     /**
-     * A method that return product payload to be used in the post body to use in the endpoint for the creation of a new product via API
+     * A method that return product payload to be used in the post body to use in the endpoint to the creation of a new product via API
      */
     public static String getPostProductPayload(){
 

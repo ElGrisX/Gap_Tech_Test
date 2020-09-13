@@ -17,8 +17,8 @@ public class ReverseWord {
 
     /**
      * Custom ReverseWord class Contructor method
-     * @File_Path Define the file path for create or delete the file
-     *writeWordsIntoFile method for delete(if the file exist) and create one everytime
+     * @File_Path Define the file path to create or delete the file
+     *writeWordsIntoFile method to delete(if the file exist) and create one everytime
      */
     public ReverseWord() {
         this.file_path = "words.txt";
